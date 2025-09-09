@@ -87,7 +87,7 @@ export const DATA = {
       title: "Assistente Administrativo",
       logoUrl: "/lds.png",
       start: "Out/2020",
-      end: "atual",
+      end: "Ago/2025",
       description:
         "Automatizei processos internos com planilhas avançadas e scripts, reduzindo erros e aumentando a eficiência logística. Desenvolvi relatórios e dashboards em Power BI para análise de dados e apoio estratégico. Contribuí com melhorias no sistema de orçamentos da empresa, incluindo o desenvolvimento de funcionalidades sob demanda, além da criação de ferramentas específicas, como planilhas para cálculo de painéis em projetos e gerenciador de estoque.",
     },
