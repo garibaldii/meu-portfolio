@@ -132,6 +132,28 @@ export const DATA = {
       image: "/excel-auto-report.jpg",
     },
     {
+      title: "Auditoria Fiscal Automatizada",
+      href: "",
+      dates: "Set/2025 - atual",
+      active: true,
+      description:
+        "O MVP automatiza a auditoria fiscal, cruzando os dados do SPED EFD ICMS/IPI com os XML das notas fiscais para identificar inconsistências. Com filtros por período e registro de logs, garante maior confiabilidade e redução de riscos fiscais.",
+      technologies: [
+        "Java",
+        "Spring",
+        "MySQL",
+      ],
+      links: [
+        {
+          type: "Documentação em estudo",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        }
+        
+      ],
+      image: "/fiscal.jpg",
+    },
+    {
       title: "Crud AWS",
       href: "https://github.com/garibaldii/front-aws",
       dates: "Mar/2024 - Abr/2024",
