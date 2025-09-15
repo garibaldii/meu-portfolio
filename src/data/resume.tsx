@@ -253,7 +253,7 @@ export const DATA = {
     },
     {
       title: "Certificação Intermediária: Desenvolvedor Back-End",
-      href: "https://badge.cps.sp.gov.br/_pdf/87b4de3b50664690a0456770d340f06c.PDF",
+      href: "https://drive.google.com/file/d/1eUlxE4oepdo40Hk2RvX8ezDwEEVKJcIE/view?usp=sharing",
       dates: "Jun/2025",
       active: true,
       description:
@@ -265,7 +265,7 @@ export const DATA = {
     },
     {
       title: "Certificação Intermediária: Desenvolvedor Front-End",
-      href: "https://badge.cps.sp.gov.br/_pdf/13e9c2e94b514cd9aec118c4e0f31f41.PDF",
+      href: "https://drive.google.com/file/d/1n1j7YfqfHXEeGW3ASTyXLUsE31lzdW3F/view?usp=sharing",
       dates: "Jun/2025",
       active: true,
       description:
@@ -322,6 +322,18 @@ export const DATA = {
         "Aplicação de estruturas de dados para diferentes projetos e plataformas. Utilização de linguagens orientadas a objetos e raciocínio lógico na resolução de problemas. Emprego de padrões de projeto no desenvolvimento de aplicações.",
 
       image: "/c3.png",
+      organizationName: "Centro Paula Souza"
+
+    },
+    {
+      title: "Certificação Profissional: Desenvolvedor para Dispositivos Móveis",
+      href: "https://drive.google.com/file/d/1AJt96mHfL2V_he2OwMzVpLEr3yqsZieg/view?usp=sharing",
+      dates: "Set/2025",
+      active: true,
+      description:
+        "Voltada para o desenvolvimento de sistemas interativos para Desktop, Web, Mobile e IoT. Durante o curso, tive contato com práticas de modelagem e implementação de bancos de dados, programação orientada a objetos com uso de padrões de projeto, além de técnicas de armazenamento e tratamento de dados estruturados e não estruturados. ",
+
+      image: "/c8.png",
       organizationName: "Centro Paula Souza"
 
     },
