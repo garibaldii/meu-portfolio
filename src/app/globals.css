@@ -2,129 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  
-
-  :root  {
-    --background: 358 59% 95%;
-    --foreground: 358 5% 1%;
-    --card: 358 50% 90%;
-    --card-foreground: 358 5% 10%;
-    --popover: 358 59% 95%;
-    --popover-foreground: 358 95% 1%;
-    --primary: 358 88.5% 27.3%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 358 30% 70%;
-    --secondary-foreground: 0 0% 0%;
-    --muted: 320 30% 85%;
-    --muted-foreground: 358 5% 35%;
-    --accent: 320 30% 80%;
-    --accent-foreground: 358 5% 10%;
-    --destructive: 0 59% 30%;
-    --destructive-foreground: 358 5% 90%;
-    --border: 358 30% 50%;
-    --input: 358 30% 18%;
-    --ring: 358 88.5% 27.3%;
-    --radius: 0rem;
-  }
-  .dark  {
-    --background: 358 50% 5%;
-    --foreground: 358 5% 90%;
-    --card: 358 50% 1%;
-    --card-foreground: 358 5% 90%;
-    --popover: 358 50% 5%;
-    --popover-foreground: 358 5% 90%;
-    --primary: 358 88.5% 27.3%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 358 30% 10%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 320 30% 15%;
-    --muted-foreground: 358 5% 60%;
-    --accent: 320 30% 15%;
-    --accent-foreground: 358 5% 90%;
-    --destructive: 0 59% 30%;
-    --destructive-foreground: 358 5% 90%;
-    --border: 358 30% 18%;
-    --input: 358 30% 18%;
-    --ring: 358 88.5% 27.3%;
-    --radius: 0rem;
-  }
-  
+/* ========== Reset básico ========== */
+* {
+  @apply m-0 p-0 box-border;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+html, body {
+  height: 100%;
 }
 
-h3 code {
-  @apply !text-lg md:!text-xl;
+/* ========== Fonte global ========== */
+body {
+  @apply font-sans antialiased bg-background text-foreground;
 }
 
-pre {
-  @apply !px-0 rounded-lg overflow-x-auto py-4;
+/* ========== Tema light/dark (se usar shadcn/ui ou radix themes) ========== */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+
+  --radius: 0.5rem;
 }
 
-pre [data-line] {
-  @apply px-4;
+.dark {
+  --background: 222.2 47.4% 11.2%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 47.4% 11.2%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 47.4% 11.2%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
 }
 
-code {
-  @apply text-sm md:text-base !leading-loose;
+/* ========== Estilização opcional ========== */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-pre > code {
-  counter-reset: line;
-}
-
-code[data-theme*=" "],
-code[data-theme*=" "] span {
-  color: var(--shiki-light);
-  background-color: var(--shiki-light-bg);
-}
-
-@media (prefers-color-scheme: dark) {
-  code[data-theme*=" "],
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-}
-
-code[data-line-numbers] {
-  counter-reset: line;
-}
-
-code[data-line-numbers] > [data-line]::before {
-  counter-increment: line;
-  content: counter(line);
-  @apply inline-block w-4 mr-4 text-right text-gray-500;
-}
-
-code {
-  counter-reset: line;
-}
-
-code > [data-line]::before {
-  counter-increment: line;
-  content: counter(line);
-
-  /* Other styling */
-  display: inline-block;
-  width: 1rem;
-  margin-right: 2rem;
-  text-align: right;
-  color: gray;
-}
-
-code[data-line-numbers-max-digits="2"] > [data-line]::before {
-  width: 2rem;
-}
-
-code[data-line-numbers-max-digits="3"] > [data-line]::before {
-  width: 3rem;
+a {
+  @apply text-primary hover:underline;
 }
