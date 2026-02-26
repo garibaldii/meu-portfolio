@@ -6,8 +6,9 @@ export const DATA = {
   url: "https://garibaldi.me",
   description: "A única maneira de fazer algo excelente é amar o que você faz.",
   summary:
-    "Sou desenvolvedor full-stack em formação, já praticando Node.js, Express e TypeScript. Tenho experiência prática em projetos acadêmicos e pessoais construindo APIs REST e trabalhando com MongoDB e MySQL. Também conheço  Java com Spring Boot, sempre buscando aplicar boas práticas e uma arquitetura bem estruturada. Já tive contato com CI/CD (GitHub Actions), Docker, integração de sistemas e até serviços em nuvem na AWS.",
+    "Desenvolvedor back-end em formação, já praticando Node.js, Express e TypeScript. Tenho experiência prática em projetos acadêmicos e pessoais construindo APIs REST e trabalhando com MongoDB e MySQL. Também conheço  Java com Spring Boot, sempre buscando aplicar boas práticas e uma arquitetura bem estruturada. Já tive contato com CI/CD (GitHub Actions), Docker, integração de sistemas e até serviços em nuvem na AWS.",
   avatarUrl: "/me.jpg",
+
   skills: [
     "Typescript",
     "Node.js",
@@ -21,9 +22,19 @@ export const DATA = {
     "Java",
     "Spring",
     "AWS",
-    "Git",
-    "Docker"
+    "Docker",
+    "RabbitMQ",
+    "Prometheus",
+    "Grafana",
+    "Redis",
+    "Eureka Naming Server",
+    "Eureka Client",
+    "Spring Cloud Config",
+    "Keycloak",
+    "Python"
+
   ],
+
   contact: {
     social: {
       GitHub: {
@@ -40,6 +51,14 @@ export const DATA = {
 
         navbar: true,
       },
+       Credly: {
+        name: "Credly",
+        url: "https://www.credly.com/users/matheus-garibaldi/badges",
+        icon: Icons.credly,
+
+        navbar: true
+      },
+  
       email: {
         name: "Send Email",
         url: "mailto:matheus.garibaldi8@gmail.com",
@@ -50,44 +69,52 @@ export const DATA = {
     },
   },
 
-  languages: [
-
-  ],
-
   academic: [
     {
 
       company: "(FATEC) Faculdade de Tecnologia do Estado de São Paulo",
       badges: [],
       title: "Técnologo em Desenvolvimento de Software em Multiplataformas",
-      logoUrl: "/fatec.png",
+      logoUrl: "/companies/fatec.png",
       start: "Jan/2023",
       end: "Dez/2026",
-     
+
     },
     {
 
       company: "(ETEC) Elias Miguel Júnior",
       badges: [],
       title: "Técnico em Administração",
-      logoUrl: "/etec.png",
+      logoUrl: "/companies/etec.png",
       start: "Jan/2018",
       end: "Jul/2019",
-     
+
     },
 
   ],
 
   work: [
     {
+      company: "GFT Technologies",
+      href: "https://www.gft.com/br/pt",
+      badges: [],
+      location: "Híbrido",
+      title: "Estagiário Back-End",
+      logoUrl: "/companies/gft.jpg",
+      start: "Out/2025",
+      end: "atual",
+      description:
+        "Passei nos quatro primeiros mêses em estudo intensivo de tecnologias back-end, tais como: SpringBoot, arquiteturas de sistemas distribuídos, gerenciamento de microsserviços com Eureka, Api Gateway, RabbitMQ, Observação com Prometheus, Grafana e actuator(spring), Autenticação com provedor terceiro (Keycloak) ,Orquestração de contêiners com Docker, front-end com angular, Análise de Dados(contrução de modelo de ML), CI/CD com Gitlab e Github Actions,IA Generativa com Google IA Studio e Hospedagem de serviços em nuvem com AWS, provisão de ambientes de nuvem com Terraform. Após este prazo, serei direcionado para projetos dentro da empresa.",
+    },
+    {
       company: "LDS Solar Distribuidora",
       href: "https://www.ldssolar.com.br/",
       badges: [],
       location: "Presencial",
       title: "Assistente Administrativo",
-      logoUrl: "/lds.png",
+      logoUrl: "/companies/lds.png",
       start: "Out/2020",
-      end: "Ago/2025",
+      end: "Out/2025",
       description:
         "Automatizei processos internos com planilhas avançadas e scripts, reduzindo erros e aumentando a eficiência logística. Desenvolvi relatórios e dashboards em Power BI para análise de dados e apoio estratégico. Contribuí com melhorias no sistema de orçamentos da empresa, incluindo o desenvolvimento de funcionalidades sob demanda, além da criação de ferramentas específicas, como planilhas para cálculo de painéis em projetos e gerenciador de estoque.",
     },
@@ -97,7 +124,7 @@ export const DATA = {
       href: "https://www.playerdrones.com.br/",
       location: "Remote",
       title: "Freelancer de Design Gráfico",
-      logoUrl: "/player-drones.png",
+      logoUrl: "/companies/player-drones.png",
       start: "Fev/2020",
       end: "Out/2020",
       description:
@@ -105,53 +132,85 @@ export const DATA = {
     },
 
   ],
+
   projects: [
     {
-      title: "Excel Auto Report",
-      href: "https://github.com/garibaldii/api-auto-report",
-      dates: "Ago/2025 - atual",
+      title: "Previsão da Nota da Redação (ENEM)",
+      href: "https://github.com/garibaldii/ML-IA-challenge",
+      dates: "Jan/2026",
       active: true,
       description:
-        "A API Auto Report foi desenvolvida para automatizar a geração de relatórios de vendas de múltiplas empresas, eliminando a morosidade de trabalhar manualmente com planilhas Excel. O sistema centraliza dados de diferentes marketplaces e permite o cálculo rápido do valor total das operações.",
+        "Este projeto foi desenvolvido como parte do Challenge de Data Science, com o objetivo de avaliar habilidades práticas em análise exploratória de dados, feature engineering e modelagem preditiva, utilizando dados reais do ENEM.Construir um modelo simples de Machine Learning capaz de prever a nota da redação (NU_NOTA_REDACAO) de um candidato, a partir de informações disponíveis no conjunto de dados.A abordagem adotada neste projeto foi de regressão, com o objetivo de prever a nota numérica da redação (variando de 0 a 1000).A avaliação do modelo foi realizada no conjunto de validação, utilizando métricas padrão de regressão:MAE (Mean Absolute Error): aproximadamente 93 pontos R²: aproximadamente 0,42",
       technologies: [
-        "Java",
-        "Spring",
-        "MySQL",
-        "Docker",
-        "Angular",
-        "Typescript",
+        "Python",
+        "Panda",
+        "Matplot",
+        "Seaborn"
+
       ],
       links: [
-
         {
           type: "Source",
-          href: "https://github.com/garibaldii/api-auto-report",
+          href: "https://github.com/garibaldii/ML-IA-challenge",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/excel-auto-report.jpg",
+      image: "/projects/ML.png",
     },
     {
-      title: "Auditoria Fiscal Automatizada",
-      href: "",
-      dates: "Set/2025 - atual",
+      title: "API de Gerenciamento Hospitalar",
+      href: "https://github.com/garibaldii/ms-hospital-challenge",
+      dates: "Nov/2025",
       active: true,
       description:
-        "O MVP automatiza a auditoria fiscal, cruzando os dados do SPED EFD ICMS/IPI com os XML das notas fiscais para identificar inconsistências. Com filtros por período e registro de logs, garante maior confiabilidade e redução de riscos fiscais.",
+        "Plataforma de gerenciamento hospitalar baseada em microsserviços, responsável por agendamento de consultas, gestão de pacientes, clínicas, exames laboratoriais, diagnósticos e notificações por e-mail. A arquitetura utiliza Spring Cloud Gateway, Eureka Service Discovery, Observabilidade das aplicaçõe com Prometheus e Grafana,Keycloak para autenticação, RabbitMQ para mensageria e MySQL com bancos isolados por microsserviço.",
       technologies: [
         "Java",
-        "Spring",
+        "Spring Boot",
+        "Spring Cloud",
+        "Spring Cloud Gateway",
+        "Eureka Service Discovery",
+        "Keycloak",
+        "RabbitMQ",
         "MySQL",
+        "Prometheus",
+        "Grafana",
+        "Docker"
       ],
       links: [
         {
-          type: "Documentação em estudo",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
-        }
-        
+          type: "Source",
+          href: "https://github.com/garibaldii/ms-hospital-challenge",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/fiscal.jpg",
+      image: "/projects/ms-hospital.png",
+    },
+    {
+      title: "Prática Curso - Microsserviços 2026 c. Spring Cloud Boot Kubernetes e Docker",
+      href: "https://github.com/garibaldii/curso-ms.git",
+      dates: "Nov/2025",
+      active: true,
+      description:
+        "Repositório com o conteúdo prático relacionado ao curso. Assuntos praticados: Microsserviços com Feign, Spring Cloud, Netflix Eureka, API Gateway, Circuit Breaker, Resilience4j, Config Server, LoadBalancer",
+      technologies: [
+        "Java",
+        "Spring Boot",
+        "Spring Cloud (configuração remota)",
+        "Eureka (Server e Client - Gerenciamento de serviços)",
+        "Spring API Gateway (porta de entrada da aplicação)",
+        "Circuit Breaker",
+        "Resilience4j",
+        "Load Balancer (Eureka Client)"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/garibaldii/ms-hospital-challenge",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/curso-ms.png",
     },
     {
       title: "Crud AWS",
@@ -178,7 +237,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/crud-aws.png",
+      image: "/projects/crud-aws.png",
     },
     {
       title: "App Cadastro de Professores e Cursos",
@@ -202,7 +261,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/cadastro-professores.png",
+      image: "/projects/cadastro-professores.png",
     },
     {
       title: "Gerenciador de Estoque",
@@ -227,9 +286,10 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/gerenciador-estoque.png",
+      image: "/projects/gerenciador-estoque.png",
     },
   ],
+
   certifications: [
     {
       title: "TOEIC (Test of English for International Communication)",
@@ -238,8 +298,38 @@ export const DATA = {
       active: true,
       description:
         "O TOEIC (Test of English for International Communication) é um exame internacional que avalia a proficiência em inglês voltada para o ambiente profissional e corporativo. OBS: 870/990 points",
-      image: "/toeic.jpg",
+      image: "/certifications/toeic.jpg",
       organizationName: "ETS TOEIC"
+    },
+    {
+      title: "Ultimate AWS Cloud Practitioner CLF-02 2026",
+      href: "https://gftbrasil.udemy.com/certificate/UC-bab49b02-1830-4906-b9eb-1fc6f2ca7158/",
+      dates: "Fev/2026",
+      active: true,
+      description:
+        "Curso intensivo voltado para prepararação a certificação AWS Certified Cloud Practitioner (CLF-C02). Cobre os principais domínios exigidos pelo exame, como conceitos de nuvem, modelos de cobrança, serviços AWS essenciais, segurança e conformidade com foco em explicações diretas, exemplos práticos e questões de simulado para fixação",
+      image: "/certifications/mareek.jpg",
+      organizationName: "Udemy"
+    },
+    {
+      title: "Cloud Essentials",
+      href: "https://www.credly.com/badges/e6dadc26-48d4-464b-9c95-2eadc73f22a5/public_url",
+      dates: "Jan/2026",
+      active: true,
+      description:
+        "Badge digital concedida após a conclusão do curso introdutório Cloud Essentials no AWS Skill Builder. Ela comprova conhecimento fundamental sobre computação em nuvem, principais serviços da AWS, modelo de responsabilidade compartilhada e benefícios financeiros como CAPEX vs OPEX.",
+      image: "/certifications/cloud-essentials.png",
+      organizationName: "AWS Educate"
+    },
+    {
+      title: "Technical Accredited",
+      href: "https://www.credly.com/badges/104b014b-11b1-4fa4-92d8-b55152e2ae09/public_url",
+      dates: "Jan/2026",
+      active: true,
+      description:
+        "Credencial concedida a profissionais que demonstram conhecimento técnico sobre soluções AWS em contextos específicos (como vendas técnicas ou arquitetura básica). Ela valida a capacidade de posicionar serviços da AWS, entender casos de uso e explicar benefícios técnicos para clientes.",
+      image: "/certifications/technical-accredited.png",
+      organizationName: "AWS Educate"
     },
     {
       title: "Getting Stated with Compute",
@@ -248,8 +338,18 @@ export const DATA = {
       active: true,
       description:
         "Fundamentos de computação em nuvem e do Amazon EC2, incluindo tipos de instâncias, configuração, armazenamento e segurança. Aprendi a lançar, gerenciar e configurar instâncias EC2 de acordo com diferentes necessidades de workload.",
-      image: "/c7.png",
+      image: "/certifications/c7.png",
       organizationName: "AWS Educate"
+    },
+    {
+      title: "Microsserviços 2025 c. Spring cloud Boot, Kubernetes e Docker",
+      href: "https://www.udemy.com/certificate/UC-d17f8a9e-2ee5-4688-b73d-2efe6144c73a/",
+      dates: "Nov/2025",
+      active: true,
+      description:
+        "Construir aplicações rápidas, distribuídas e fáceis de manter é uma das habilidades mais procuradas no mercado de tecnologia hoje. Este curso foi criado para ajudar a dominar a construção de microsserviços modernos com Java, utilizando Spring Boot 3.5, Spring Cloud, Docker e Kubernetes.",
+      image: "/certifications/curso-ms.jpg",
+      organizationName: "Udemy"
     },
     {
       title: "Certificação Intermediária: Desenvolvedor Back-End",
@@ -259,7 +359,7 @@ export const DATA = {
       description:
         "Atuação em liderança, inovação e transformação digital, identificando oportunidades e projetando soluções com TI. Experiência em banco de dados, modelagem e qualidade da informação. Aplicação de metodologias de desenvolvimento de software e gestão de projetos, garantindo prazos, recursos e resultados.",
 
-      image: "/c1.png",
+      image: "/certifications/c1.png",
       organizationName: "Centro Paula Souza"
 
     },
@@ -271,7 +371,7 @@ export const DATA = {
       description:
         "Atuação no desenvolvimento seguro de software, analisando vulnerabilidades e aplicando boas práticas em banco de dados, back-end e front-end. Experiência em arquitetura da informação, design digital, web, mobile e desktop, garantindo qualidade, usabilidade e segurança. Capacidade de modelar processos de negócio e propor soluções de TI que aumentam a competitividade organizacional.",
 
-      image: "/c2.png",
+      image: "/certifications/c2.png",
       organizationName: "Centro Paula Souza"
 
     },
@@ -285,7 +385,7 @@ export const DATA = {
       description:
         "O GFT Start #7 Java é um bootcamp focado em desenvolvimento backend com Java, abordando desde os conceitos fundamentais de POO (Programação Orientada a Objetos) até práticas avançadas de desenvolvimento de APIs RESTful, manipulação de bancos de dados e integração de sistemas.",
 
-      image: "/c4.png",
+      image: "/certifications/c4.png",
       organizationName: "DIO - Digital Inovation One"
 
     },
@@ -297,7 +397,7 @@ export const DATA = {
       description:
         "Bootcamp voltado para fundamentos de programação e resolução de problemas, abordando conceitos essenciais como variáveis, tipos de dados, estruturas de controle, laços, funções e algoritmos.",
 
-      image: "/c5.png",
+      image: "/certifications/c5.png",
       organizationName: "DIO - Digital Inovation One"
 
     },
@@ -309,7 +409,7 @@ export const DATA = {
       description:
         "O curso ensina a criar aplicações de Visão Computacional na saúde usando Edge Impulse, incluindo Impulse Design, pré-processamento de imagens, extração de features e Transfer Learning. Também aborda avaliação de modelos com acurácia e matriz de confusão.",
 
-      image: "/c6.png",
+      image: "/certifications/c6.png",
       organizationName: "Fit Tech Academy"
 
     },
@@ -321,7 +421,7 @@ export const DATA = {
       description:
         "Aplicação de estruturas de dados para diferentes projetos e plataformas. Utilização de linguagens orientadas a objetos e raciocínio lógico na resolução de problemas. Emprego de padrões de projeto no desenvolvimento de aplicações.",
 
-      image: "/c3.png",
+      image: "/certifications/c3.png",
       organizationName: "Centro Paula Souza"
 
     },
@@ -333,7 +433,7 @@ export const DATA = {
       description:
         "Voltada para o desenvolvimento de sistemas interativos para Desktop, Web, Mobile e IoT. Durante o curso, tive contato com práticas de modelagem e implementação de bancos de dados, programação orientada a objetos com uso de padrões de projeto, além de técnicas de armazenamento e tratamento de dados estruturados e não estruturados. ",
 
-      image: "/c8.png",
+      image: "/certifications/c8.png",
       organizationName: "Centro Paula Souza"
 
     },
