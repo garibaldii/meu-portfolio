@@ -59,14 +59,32 @@ export default function Page() {
             <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
               {DATA.summary}
             </Markdown>
-             <div className="gap-2 flex pt-2 items-center">
 
-                <img src="/eua.png" alt="eua" width={30}/>
-                <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                  C1: Inglês Avançado, TOEIC 870/990 Pts
-                </Markdown>
-              </div>
           </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+            <h2 className="text-xl font-bold">Destaques</h2>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+
+            {DATA.highlights.map((highlight, id) => (
+              <div key={id} className="gap-2 flex pt-2 items-center">
+                <img src={highlight.image} alt={highlight.name} width={60} />
+                <Link
+                  href={highlight.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="prose max-w-full text-pretty font-sans text-base text-muted-foreground font-bold"
+                >
+                  {highlight.name}
+                </Link>
+              </div>
+            ))}
+
+          </BlurFade>
+
+
         </section>
         <section id="contact">
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
@@ -94,7 +112,7 @@ export default function Page() {
             </div>
           </BlurFade>
         </section>
-       
+
       </div>
       <div className="md:w-3/5 space-y-10">
         <section id="work">

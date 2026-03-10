@@ -31,8 +31,23 @@ export const DATA = {
     "Eureka Client",
     "Spring Cloud Config",
     "Keycloak",
-    "Python"
+    "Python",
+    "Terraform"
 
+  ],
+
+  highlights: [
+    {
+      name: "C1: Inglês Avançado, TOEIC 870/990 Pts",
+      image: "/eua.png",
+      link: "https://www.linkedin.com/posts/matheus-garibaldi_gostaria-de-compartilhar-que-recebi-uma-nova-activity-7232438985300602884-eXd-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC_GqlEB91DQQiFxRmpaCq6pgzhBSBjMw5o"
+
+    },
+    {
+      name: "AWS Cloud Practitioner",
+      image: "/ccp.png",
+      link: "https://www.credly.com/badges/79d97225-7015-40e4-9a4c-f42829b434bf/public_url"
+    }
   ],
 
   contact: {
@@ -51,14 +66,14 @@ export const DATA = {
 
         navbar: true,
       },
-       Credly: {
+      Credly: {
         name: "Credly",
         url: "https://www.credly.com/users/matheus-garibaldi/badges",
         icon: Icons.credly,
 
         navbar: true
       },
-  
+
       email: {
         name: "Send Email",
         url: "mailto:matheus.garibaldi8@gmail.com",
@@ -300,6 +315,16 @@ export const DATA = {
         "O TOEIC (Test of English for International Communication) é um exame internacional que avalia a proficiência em inglês voltada para o ambiente profissional e corporativo. OBS: 870/990 points",
       image: "/certifications/toeic.jpg",
       organizationName: "ETS TOEIC"
+    },
+    {
+      title: "Terraform for AWS - Begginer to Expert",
+      href: "https://www.linkedin.com/posts/matheus-garibaldi_gostaria-de-compartilhar-que-recebi-uma-nova-activity-7232438985300602884-eXd-?utm_source=share&utm_medium=member_android&rcm=ACoAAC_GqlEB91DQQiFxRmpaCq6pgzhBSBjMw5o",
+      dates: "Mar/2026",
+      active: true,
+      description:
+        "Curso voltado para noção geral da linguagem Infraestructure as Code (IaaC) Terraform. Noções de como arquitetar ambiente nuvem, este em específico com provedor AWS.",
+      image: "/certifications/terraform.jpg",
+      organizationName: "Udemy"
     },
     {
       title: "Ultimate AWS Cloud Practitioner CLF-02 2026",
